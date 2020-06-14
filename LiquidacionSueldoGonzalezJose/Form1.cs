@@ -41,8 +41,6 @@ namespace LiquidacionSueldoGonzalezJose
                 {
                     for (int i = 0; i < registro.Rows.Count; i++)
                     {
-
-
                         txtnombre.Text = registro.Rows[i]["NOMBRE"].ToString();
                         lbSueldoBase.Text = registro.Rows[i]["SUELDO_BASE"].ToString();
                         txtCargas.Text = registro.Rows[i]["CARGAS"].ToString();
@@ -50,22 +48,25 @@ namespace LiquidacionSueldoGonzalezJose
                         lbmes.Text = registro.Rows[i]["MES"].ToString().ToUpper();
                         sueldoBase = Convert.ToInt32(registro.Rows[i]["SUELDO_BASE"]);
                         cargas = Convert.ToInt32(registro.Rows[i]["CARGAS"]);
-
                     }
 
                     lbMovilizacion.Text = movilizacion.ToString();
                     lbAsignacionFamiliar.Text = (Utils.asignacionFamiliar(cargas) * cargas).ToString();
                     lbTotalRemuneracion.Text = ( sueldoBase + Convert.ToInt32(lbOtrosIngresos.Text) ).ToString();
                     lbTotalhaberes.Text = ( Convert.ToInt32(lbTotalRemuneracion.Text) + Convert.ToInt32(lbAsignacionFamiliar.Text) + movilizacion ).ToString();
-
-
-
+                    var afp = sueldoBase * prevision;
+                    var salud = sueldoBase * fonasa;
+                    lbcotizacion.Text = afp.ToString();
+                    lbSalud.Text = salud.ToString();
+                    lbtotaldescuentos.Text = ( Convert.ToInt32(lbcotizacion.Text) + Convert.ToInt32(lbSalud.Text) + Convert.ToInt32(lbvoluntaria.Text)).ToString();
+                    lbliquido.Text = ( Convert.ToInt32(lbTotalhaberes.Text) - Convert.ToInt32(lbtotaldescuentos.Text) ).ToString();
+                    txtTotal.Text = (Convert.ToInt32(lbliquido.Text) - Convert.ToInt32(lbanticipos.Text)).ToString();
                     lbempleador.Text = empleador;
                     lbfecha.Text = "FECHA          :"+DateTime.Now.ToString() ;
 
                 }else
                 {
-                    MessageBox.Show("RUT NO EXISTE");
+                    MessageBox.Show("RUT NO ENCONTRADO");
                 }
                 
             }
