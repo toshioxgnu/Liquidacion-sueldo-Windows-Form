@@ -55,6 +55,25 @@ namespace LiquidacionSueldoGonzalezJose
                 return false;
             }
         }
+
+        public int asignacionFamiliar(int sueldobase)
+        {
+            if(sueldobase < 315841)
+            {
+                return 12364;
+            }
+            else if(sueldobase > 315481 && sueldobase < 461320)
+            {
+                return 7587;
+            }
+            else if(sueldobase> 461320 && sueldobase < 719502)
+            {
+                return 2398;
+            }else
+            {
+                return 0;
+            }
+        }
     }
 
 }

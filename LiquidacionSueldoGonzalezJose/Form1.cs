@@ -13,6 +13,13 @@ namespace LiquidacionSueldoGonzalezJose
 {
     public partial class Form1 : Form
     {
+        const string empleador = "IP LEONES SA. ";
+        int sueldoBase;
+        int cargas;
+        const int movilizacion = 25000; 
+        const double fonasa = 0.07;
+        const double prevision = 0.1;
+
         public Form1()
         {
             InitializeComponent();
@@ -30,10 +37,37 @@ namespace LiquidacionSueldoGonzalezJose
                 string query = "select * from LIQUIDACIONJoseGonzalez where RUT = '"+rut+"'";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 adapter.Fill(registro);
-                for(int i=0; i<registro.Rows.Count; i++)
+                if(registro!= null)
                 {
-                    txtnombre.Text = registro.Rows[i]["NOMBRE"].ToString();
+                    for (int i = 0; i < registro.Rows.Count; i++)
+                    {
+
+
+                        txtnombre.Text = registro.Rows[i]["NOMBRE"].ToString();
+                        lbSueldoBase.Text = registro.Rows[i]["SUELDO_BASE"].ToString();
+                        txtCargas.Text = registro.Rows[i]["CARGAS"].ToString();
+                        lbanio.Text = registro.Rows[i]["ANIO"].ToString();
+                        lbmes.Text = registro.Rows[i]["MES"].ToString().ToUpper();
+                        sueldoBase = Convert.ToInt32(registro.Rows[i]["SUELDO_BASE"]);
+                        cargas = Convert.ToInt32(registro.Rows[i]["CARGAS"]);
+
+                    }
+
+                    lbMovilizacion.Text = movilizacion.ToString();
+                    lbAsignacionFamiliar.Text = (Utils.asignacionFamiliar(cargas) * cargas).ToString();
+                    lbTotalRemuneracion.Text = ( sueldoBase + Convert.ToInt32(lbOtrosIngresos.Text) ).ToString();
+                    lbTotalhaberes.Text = ( Convert.ToInt32(lbTotalRemuneracion.Text) + Convert.ToInt32(lbAsignacionFamiliar.Text) + movilizacion ).ToString();
+
+
+
+                    lbempleador.Text = empleador;
+                    lbfecha.Text = "FECHA          :"+DateTime.Now.ToString() ;
+
+                }else
+                {
+                    MessageBox.Show("RUT NO EXISTE");
                 }
+                
             }
             else
             {

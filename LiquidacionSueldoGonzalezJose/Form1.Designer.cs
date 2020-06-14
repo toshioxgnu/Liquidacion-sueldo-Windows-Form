@@ -89,6 +89,11 @@
             this.lbliquido = new System.Windows.Forms.Label();
             this.lbtotalotrosdescuentos = new System.Windows.Forms.Label();
             this.lbotrosdescuentos = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.lbempleador = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.lbfecha = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -469,7 +474,7 @@
             // 
             // btngenera
             // 
-            this.btngenera.Location = new System.Drawing.Point(275, 837);
+            this.btngenera.Location = new System.Drawing.Point(275, 942);
             this.btngenera.Name = "btngenera";
             this.btngenera.Size = new System.Drawing.Size(272, 42);
             this.btngenera.TabIndex = 46;
@@ -637,11 +642,60 @@
             this.lbotrosdescuentos.TabIndex = 61;
             this.lbotrosdescuentos.Text = "0";
             // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(57, 830);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(295, 13);
+            this.label41.TabIndex = 65;
+            this.label41.Text = "CERTIFICO QUE HE RECIBIDO DE MI EMPLEADOR Sr(a) :";
+            // 
+            // lbempleador
+            // 
+            this.lbempleador.AutoSize = true;
+            this.lbempleador.Location = new System.Drawing.Point(370, 830);
+            this.lbempleador.Name = "lbempleador";
+            this.lbempleador.Size = new System.Drawing.Size(0, 13);
+            this.lbempleador.TabIndex = 66;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(57, 861);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(479, 13);
+            this.label42.TabIndex = 67;
+            this.label42.Text = "A mi entera satisfaccion el saldo líquido indicado en la presente liquidacion, si" +
+    "n tener cargo ni cobro ";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(57, 874);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(314, 13);
+            this.label43.TabIndex = 68;
+            this.label43.Text = "posterior alguno que hacer, por los conecptos de esta liquidacion";
+            // 
+            // lbfecha
+            // 
+            this.lbfecha.AutoSize = true;
+            this.lbfecha.Location = new System.Drawing.Point(60, 905);
+            this.lbfecha.Name = "lbfecha";
+            this.lbfecha.Size = new System.Drawing.Size(0, 13);
+            this.lbfecha.TabIndex = 69;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 891);
+            this.ClientSize = new System.Drawing.Size(793, 991);
+            this.Controls.Add(this.lbfecha);
+            this.Controls.Add(this.label43);
+            this.Controls.Add(this.label42);
+            this.Controls.Add(this.lbempleador);
+            this.Controls.Add(this.label41);
             this.Controls.Add(this.lbanticipos);
             this.Controls.Add(this.lbliquido);
             this.Controls.Add(this.lbtotalotrosdescuentos);
@@ -773,6 +827,11 @@
         private System.Windows.Forms.Label lbliquido;
         private System.Windows.Forms.Label lbtotalotrosdescuentos;
         private System.Windows.Forms.Label lbotrosdescuentos;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label lbempleador;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label lbfecha;
     }
 }
 
