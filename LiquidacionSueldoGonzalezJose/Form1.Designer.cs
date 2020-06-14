@@ -514,11 +514,11 @@
             // lbSueldoBase
             // 
             this.lbSueldoBase.AutoSize = true;
-            this.lbSueldoBase.Location = new System.Drawing.Point(635, 157);
+            this.lbSueldoBase.Location = new System.Drawing.Point(648, 157);
             this.lbSueldoBase.Name = "lbSueldoBase";
-            this.lbSueldoBase.Size = new System.Drawing.Size(43, 13);
+            this.lbSueldoBase.Size = new System.Drawing.Size(13, 13);
             this.lbSueldoBase.TabIndex = 51;
-            this.lbSueldoBase.Text = "276000";
+            this.lbSueldoBase.Text = "0";
             // 
             // lbOtrosIngresos
             // 
@@ -532,11 +532,11 @@
             // lbTotalRemuneracion
             // 
             this.lbTotalRemuneracion.AutoSize = true;
-            this.lbTotalRemuneracion.Location = new System.Drawing.Point(635, 241);
+            this.lbTotalRemuneracion.Location = new System.Drawing.Point(648, 241);
             this.lbTotalRemuneracion.Name = "lbTotalRemuneracion";
-            this.lbTotalRemuneracion.Size = new System.Drawing.Size(43, 13);
+            this.lbTotalRemuneracion.Size = new System.Drawing.Size(13, 13);
             this.lbTotalRemuneracion.TabIndex = 53;
-            this.lbTotalRemuneracion.Text = "276000";
+            this.lbTotalRemuneracion.Text = "0";
             // 
             // lbAsignacionFamiliar
             // 
@@ -577,11 +577,11 @@
             // lbvoluntaria
             // 
             this.lbvoluntaria.AutoSize = true;
-            this.lbvoluntaria.Location = new System.Drawing.Point(635, 525);
+            this.lbvoluntaria.Location = new System.Drawing.Point(649, 525);
             this.lbvoluntaria.Name = "lbvoluntaria";
-            this.lbvoluntaria.Size = new System.Drawing.Size(43, 13);
+            this.lbvoluntaria.Size = new System.Drawing.Size(13, 13);
             this.lbvoluntaria.TabIndex = 59;
-            this.lbvoluntaria.Text = "276000";
+            this.lbvoluntaria.Text = "0";
             // 
             // lbSalud
             // 
@@ -595,11 +595,11 @@
             // lbcotizacion
             // 
             this.lbcotizacion.AutoSize = true;
-            this.lbcotizacion.Location = new System.Drawing.Point(638, 458);
+            this.lbcotizacion.Location = new System.Drawing.Point(648, 458);
             this.lbcotizacion.Name = "lbcotizacion";
-            this.lbcotizacion.Size = new System.Drawing.Size(43, 13);
+            this.lbcotizacion.Size = new System.Drawing.Size(13, 13);
             this.lbcotizacion.TabIndex = 57;
-            this.lbcotizacion.Text = "276000";
+            this.lbcotizacion.Text = "0";
             // 
             // lbanticipos
             // 
@@ -613,11 +613,11 @@
             // lbliquido
             // 
             this.lbliquido.AutoSize = true;
-            this.lbliquido.Location = new System.Drawing.Point(635, 714);
+            this.lbliquido.Location = new System.Drawing.Point(649, 714);
             this.lbliquido.Name = "lbliquido";
-            this.lbliquido.Size = new System.Drawing.Size(43, 13);
+            this.lbliquido.Size = new System.Drawing.Size(13, 13);
             this.lbliquido.TabIndex = 63;
-            this.lbliquido.Text = "276000";
+            this.lbliquido.Text = "0";
             // 
             // lbtotalotrosdescuentos
             // 
@@ -631,11 +631,11 @@
             // lbotrosdescuentos
             // 
             this.lbotrosdescuentos.AutoSize = true;
-            this.lbotrosdescuentos.Location = new System.Drawing.Point(638, 627);
+            this.lbotrosdescuentos.Location = new System.Drawing.Point(649, 627);
             this.lbotrosdescuentos.Name = "lbotrosdescuentos";
-            this.lbotrosdescuentos.Size = new System.Drawing.Size(43, 13);
+            this.lbotrosdescuentos.Size = new System.Drawing.Size(13, 13);
             this.lbotrosdescuentos.TabIndex = 61;
-            this.lbotrosdescuentos.Text = "276000";
+            this.lbotrosdescuentos.Text = "0";
             // 
             // Form1
             // 
