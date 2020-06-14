@@ -17,6 +17,10 @@ namespace LiquidacionSueldoGonzalezJose
         {
             InitializeComponent();
         }
-            
+
+        private void btngenera_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

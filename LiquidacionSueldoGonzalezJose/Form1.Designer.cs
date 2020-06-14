@@ -37,7 +37,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCargas = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -69,12 +69,26 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.btngenera = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.lbanio = new System.Windows.Forms.Label();
             this.lbmes = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lbSueldoBase = new System.Windows.Forms.Label();
+            this.lbOtrosIngresos = new System.Windows.Forms.Label();
+            this.lbTotalRemuneracion = new System.Windows.Forms.Label();
+            this.lbAsignacionFamiliar = new System.Windows.Forms.Label();
+            this.lbMovilizacion = new System.Windows.Forms.Label();
+            this.lbTotalhaberes = new System.Windows.Forms.Label();
+            this.lbtotaldescuentos = new System.Windows.Forms.Label();
+            this.lbvoluntaria = new System.Windows.Forms.Label();
+            this.lbSalud = new System.Windows.Forms.Label();
+            this.lbcotizacion = new System.Windows.Forms.Label();
+            this.lbanticipos = new System.Windows.Forms.Label();
+            this.lbliquido = new System.Windows.Forms.Label();
+            this.lbtotalotrosdescuentos = new System.Windows.Forms.Label();
+            this.lbotrosdescuentos = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -158,12 +172,12 @@
             this.label8.TabIndex = 11;
             this.label8.Text = "# cargas ";
             // 
-            // textBox1
+            // txtCargas
             // 
-            this.textBox1.Location = new System.Drawing.Point(386, 277);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(29, 20);
-            this.textBox1.TabIndex = 12;
+            this.txtCargas.Location = new System.Drawing.Point(386, 277);
+            this.txtCargas.Name = "txtCargas";
+            this.txtCargas.Size = new System.Drawing.Size(29, 20);
+            this.txtCargas.TabIndex = 12;
             // 
             // label9
             // 
@@ -186,7 +200,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(464, 157);
+            this.label11.Location = new System.Drawing.Point(525, 157);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(13, 13);
             this.label11.TabIndex = 15;
@@ -195,7 +209,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(464, 200);
+            this.label12.Location = new System.Drawing.Point(525, 200);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(13, 13);
             this.label12.TabIndex = 16;
@@ -204,7 +218,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(464, 241);
+            this.label13.Location = new System.Drawing.Point(525, 241);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(13, 13);
             this.label13.TabIndex = 17;
@@ -213,7 +227,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(464, 284);
+            this.label14.Location = new System.Drawing.Point(525, 284);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(13, 13);
             this.label14.TabIndex = 18;
@@ -232,7 +246,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(464, 322);
+            this.label17.Location = new System.Drawing.Point(525, 322);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(13, 13);
             this.label17.TabIndex = 21;
@@ -250,7 +264,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(464, 360);
+            this.label19.Location = new System.Drawing.Point(525, 360);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(13, 13);
             this.label19.TabIndex = 23;
@@ -277,7 +291,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(467, 458);
+            this.label22.Location = new System.Drawing.Point(528, 458);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(13, 13);
             this.label22.TabIndex = 26;
@@ -295,7 +309,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(467, 491);
+            this.label24.Location = new System.Drawing.Point(528, 491);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(13, 13);
             this.label24.TabIndex = 28;
@@ -313,7 +327,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(467, 525);
+            this.label26.Location = new System.Drawing.Point(528, 525);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(13, 13);
             this.label26.TabIndex = 30;
@@ -331,7 +345,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(467, 558);
+            this.label28.Location = new System.Drawing.Point(528, 558);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(13, 13);
             this.label28.TabIndex = 32;
@@ -349,7 +363,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(464, 627);
+            this.label30.Location = new System.Drawing.Point(525, 627);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(13, 13);
             this.label30.TabIndex = 34;
@@ -367,7 +381,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(464, 669);
+            this.label32.Location = new System.Drawing.Point(525, 669);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(13, 13);
             this.label32.TabIndex = 36;
@@ -403,7 +417,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(464, 714);
+            this.label36.Location = new System.Drawing.Point(525, 714);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(13, 13);
             this.label36.TabIndex = 40;
@@ -421,7 +435,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(464, 746);
+            this.label38.Location = new System.Drawing.Point(525, 746);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(13, 13);
             this.label38.TabIndex = 42;
@@ -439,19 +453,19 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(464, 780);
+            this.label40.Location = new System.Drawing.Point(525, 780);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(13, 13);
             this.label40.TabIndex = 44;
             this.label40.Text = "$";
             // 
-            // textBox2
+            // txtTotal
             // 
-            this.textBox2.Location = new System.Drawing.Point(550, 780);
-            this.textBox2.MaxLength = 12;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 20);
-            this.textBox2.TabIndex = 45;
+            this.txtTotal.Location = new System.Drawing.Point(550, 780);
+            this.txtTotal.MaxLength = 12;
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(213, 20);
+            this.txtTotal.TabIndex = 45;
             // 
             // btngenera
             // 
@@ -461,6 +475,7 @@
             this.btngenera.TabIndex = 46;
             this.btngenera.Text = "GENERAR ";
             this.btngenera.UseVisualStyleBackColor = true;
+            this.btngenera.Click += new System.EventHandler(this.btngenera_Click);
             // 
             // label15
             // 
@@ -496,17 +511,157 @@
             this.label3.TabIndex = 47;
             this.label3.Text = "PERIODO DE REMUNERACION      :";
             // 
+            // lbSueldoBase
+            // 
+            this.lbSueldoBase.AutoSize = true;
+            this.lbSueldoBase.Location = new System.Drawing.Point(635, 157);
+            this.lbSueldoBase.Name = "lbSueldoBase";
+            this.lbSueldoBase.Size = new System.Drawing.Size(43, 13);
+            this.lbSueldoBase.TabIndex = 51;
+            this.lbSueldoBase.Text = "276000";
+            // 
+            // lbOtrosIngresos
+            // 
+            this.lbOtrosIngresos.AutoSize = true;
+            this.lbOtrosIngresos.Location = new System.Drawing.Point(648, 200);
+            this.lbOtrosIngresos.Name = "lbOtrosIngresos";
+            this.lbOtrosIngresos.Size = new System.Drawing.Size(13, 13);
+            this.lbOtrosIngresos.TabIndex = 52;
+            this.lbOtrosIngresos.Text = "0";
+            // 
+            // lbTotalRemuneracion
+            // 
+            this.lbTotalRemuneracion.AutoSize = true;
+            this.lbTotalRemuneracion.Location = new System.Drawing.Point(635, 241);
+            this.lbTotalRemuneracion.Name = "lbTotalRemuneracion";
+            this.lbTotalRemuneracion.Size = new System.Drawing.Size(43, 13);
+            this.lbTotalRemuneracion.TabIndex = 53;
+            this.lbTotalRemuneracion.Text = "276000";
+            // 
+            // lbAsignacionFamiliar
+            // 
+            this.lbAsignacionFamiliar.AutoSize = true;
+            this.lbAsignacionFamiliar.Location = new System.Drawing.Point(649, 284);
+            this.lbAsignacionFamiliar.Name = "lbAsignacionFamiliar";
+            this.lbAsignacionFamiliar.Size = new System.Drawing.Size(13, 13);
+            this.lbAsignacionFamiliar.TabIndex = 54;
+            this.lbAsignacionFamiliar.Text = "0";
+            // 
+            // lbMovilizacion
+            // 
+            this.lbMovilizacion.AutoSize = true;
+            this.lbMovilizacion.Location = new System.Drawing.Point(649, 322);
+            this.lbMovilizacion.Name = "lbMovilizacion";
+            this.lbMovilizacion.Size = new System.Drawing.Size(13, 13);
+            this.lbMovilizacion.TabIndex = 55;
+            this.lbMovilizacion.Text = "0";
+            // 
+            // lbTotalhaberes
+            // 
+            this.lbTotalhaberes.AutoSize = true;
+            this.lbTotalhaberes.Location = new System.Drawing.Point(649, 360);
+            this.lbTotalhaberes.Name = "lbTotalhaberes";
+            this.lbTotalhaberes.Size = new System.Drawing.Size(13, 13);
+            this.lbTotalhaberes.TabIndex = 56;
+            this.lbTotalhaberes.Text = "0";
+            // 
+            // lbtotaldescuentos
+            // 
+            this.lbtotaldescuentos.AutoSize = true;
+            this.lbtotaldescuentos.Location = new System.Drawing.Point(648, 558);
+            this.lbtotaldescuentos.Name = "lbtotaldescuentos";
+            this.lbtotaldescuentos.Size = new System.Drawing.Size(13, 13);
+            this.lbtotaldescuentos.TabIndex = 60;
+            this.lbtotaldescuentos.Text = "0";
+            // 
+            // lbvoluntaria
+            // 
+            this.lbvoluntaria.AutoSize = true;
+            this.lbvoluntaria.Location = new System.Drawing.Point(635, 525);
+            this.lbvoluntaria.Name = "lbvoluntaria";
+            this.lbvoluntaria.Size = new System.Drawing.Size(43, 13);
+            this.lbvoluntaria.TabIndex = 59;
+            this.lbvoluntaria.Text = "276000";
+            // 
+            // lbSalud
+            // 
+            this.lbSalud.AutoSize = true;
+            this.lbSalud.Location = new System.Drawing.Point(649, 491);
+            this.lbSalud.Name = "lbSalud";
+            this.lbSalud.Size = new System.Drawing.Size(13, 13);
+            this.lbSalud.TabIndex = 58;
+            this.lbSalud.Text = "0";
+            // 
+            // lbcotizacion
+            // 
+            this.lbcotizacion.AutoSize = true;
+            this.lbcotizacion.Location = new System.Drawing.Point(638, 458);
+            this.lbcotizacion.Name = "lbcotizacion";
+            this.lbcotizacion.Size = new System.Drawing.Size(43, 13);
+            this.lbcotizacion.TabIndex = 57;
+            this.lbcotizacion.Text = "276000";
+            // 
+            // lbanticipos
+            // 
+            this.lbanticipos.AutoSize = true;
+            this.lbanticipos.Location = new System.Drawing.Point(649, 746);
+            this.lbanticipos.Name = "lbanticipos";
+            this.lbanticipos.Size = new System.Drawing.Size(13, 13);
+            this.lbanticipos.TabIndex = 64;
+            this.lbanticipos.Text = "0";
+            // 
+            // lbliquido
+            // 
+            this.lbliquido.AutoSize = true;
+            this.lbliquido.Location = new System.Drawing.Point(635, 714);
+            this.lbliquido.Name = "lbliquido";
+            this.lbliquido.Size = new System.Drawing.Size(43, 13);
+            this.lbliquido.TabIndex = 63;
+            this.lbliquido.Text = "276000";
+            // 
+            // lbtotalotrosdescuentos
+            // 
+            this.lbtotalotrosdescuentos.AutoSize = true;
+            this.lbtotalotrosdescuentos.Location = new System.Drawing.Point(649, 669);
+            this.lbtotalotrosdescuentos.Name = "lbtotalotrosdescuentos";
+            this.lbtotalotrosdescuentos.Size = new System.Drawing.Size(13, 13);
+            this.lbtotalotrosdescuentos.TabIndex = 62;
+            this.lbtotalotrosdescuentos.Text = "0";
+            // 
+            // lbotrosdescuentos
+            // 
+            this.lbotrosdescuentos.AutoSize = true;
+            this.lbotrosdescuentos.Location = new System.Drawing.Point(638, 627);
+            this.lbotrosdescuentos.Name = "lbotrosdescuentos";
+            this.lbotrosdescuentos.Size = new System.Drawing.Size(43, 13);
+            this.lbotrosdescuentos.TabIndex = 61;
+            this.lbotrosdescuentos.Text = "276000";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(815, 891);
+            this.Controls.Add(this.lbanticipos);
+            this.Controls.Add(this.lbliquido);
+            this.Controls.Add(this.lbtotalotrosdescuentos);
+            this.Controls.Add(this.lbotrosdescuentos);
+            this.Controls.Add(this.lbtotaldescuentos);
+            this.Controls.Add(this.lbvoluntaria);
+            this.Controls.Add(this.lbSalud);
+            this.Controls.Add(this.lbcotizacion);
+            this.Controls.Add(this.lbTotalhaberes);
+            this.Controls.Add(this.lbMovilizacion);
+            this.Controls.Add(this.lbAsignacionFamiliar);
+            this.Controls.Add(this.lbTotalRemuneracion);
+            this.Controls.Add(this.lbOtrosIngresos);
+            this.Controls.Add(this.lbSueldoBase);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.lbanio);
             this.Controls.Add(this.lbmes);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btngenera);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label40);
             this.Controls.Add(this.label39);
             this.Controls.Add(this.label38);
@@ -538,7 +693,7 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCargas);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -566,7 +721,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCargas;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -598,12 +753,26 @@
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Button btngenera;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label lbanio;
         private System.Windows.Forms.Label lbmes;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbSueldoBase;
+        private System.Windows.Forms.Label lbOtrosIngresos;
+        private System.Windows.Forms.Label lbTotalRemuneracion;
+        private System.Windows.Forms.Label lbAsignacionFamiliar;
+        private System.Windows.Forms.Label lbMovilizacion;
+        private System.Windows.Forms.Label lbTotalhaberes;
+        private System.Windows.Forms.Label lbtotaldescuentos;
+        private System.Windows.Forms.Label lbvoluntaria;
+        private System.Windows.Forms.Label lbSalud;
+        private System.Windows.Forms.Label lbcotizacion;
+        private System.Windows.Forms.Label lbanticipos;
+        private System.Windows.Forms.Label lbliquido;
+        private System.Windows.Forms.Label lbtotalotrosdescuentos;
+        private System.Windows.Forms.Label lbotrosdescuentos;
     }
 }
 
