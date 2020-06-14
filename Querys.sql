@@ -27,4 +27,7 @@ insert into LIQUIDACIONJoseGonzalez (RUT,NOMBRE,MES,ANIO,EDAD,SUELDO_BASE,CARGAS
 select * from LIQUIDACIONJoseGonzalez
 
 
+select * from LIQUIDACIONJoseGonzalez where RUT = '18247430-4'
+
+
 
