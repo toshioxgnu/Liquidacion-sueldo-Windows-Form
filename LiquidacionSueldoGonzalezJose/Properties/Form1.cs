@@ -28,7 +28,15 @@ namespace LiquidacionSueldoGonzalezJose.Properties
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            string nombre = txtnombre.Text.ToString();
+            DataTable datos = new DataTable();
+            nombre = txtnombre.Text.ToString();
+            SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\jgonz\\source\\repos\\LiquidacionSueldoGonzalezJose\\LiquidacionSueldoGonzalezJose\\Database1.mdf;Integrated Security=True");
+            conn.Open();
+            string query = "insert into TBSALUD_DETALLE (ID_SALUD, NOMBRE) values ( 2,'" + nombre + "') ";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+            datos.Clear();
+            adapter.Fill(datos);
         }
     }
 }
