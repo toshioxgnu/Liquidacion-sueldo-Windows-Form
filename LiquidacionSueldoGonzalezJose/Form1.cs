@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LiquidacionSueldoGonzalezJose.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,7 +35,7 @@ namespace LiquidacionSueldoGonzalezJose
             {
                 DataTable registro = new DataTable();
                 conn.Open();
-                string query = "select * from LIQUIDACIONJoseGonzalez where RUT = '"+rut+"'";
+                string query = "select * from LIQUIDACIONJoseGonzalez where RUT = '" + rut + "'";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 adapter.Fill(registro);
                 if(registro!= null)
@@ -75,6 +76,18 @@ namespace LiquidacionSueldoGonzalezJose
                 MessageBox.Show("Rut Incorrecto porfavor reingrese");
             }
 
+        }
+
+        private void saludToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formasalud formSalud = new formasalud();
+            formSalud.ShowDialog();
+        }
+
+        private void previsionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formPrevision formaprevision = new formPrevision();
+            formaprevision.ShowDialog();
         }
     }
 }

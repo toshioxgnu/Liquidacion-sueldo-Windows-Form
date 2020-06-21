@@ -715,12 +715,14 @@
             this.saludToolStripMenuItem.Name = "saludToolStripMenuItem";
             this.saludToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saludToolStripMenuItem.Text = "Salud";
+            this.saludToolStripMenuItem.Click += new System.EventHandler(this.saludToolStripMenuItem_Click);
             // 
             // previsionToolStripMenuItem
             // 
             this.previsionToolStripMenuItem.Name = "previsionToolStripMenuItem";
             this.previsionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.previsionToolStripMenuItem.Text = "Prevision";
+            this.previsionToolStripMenuItem.Click += new System.EventHandler(this.previsionToolStripMenuItem_Click);
             // 
             // Form1
             // 
