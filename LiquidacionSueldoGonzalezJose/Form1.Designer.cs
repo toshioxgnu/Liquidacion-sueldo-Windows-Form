@@ -94,6 +94,11 @@
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.lbfecha = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.tablasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saludToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.previsionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -686,6 +691,37 @@
             this.lbfecha.Size = new System.Drawing.Size(0, 13);
             this.lbfecha.TabIndex = 69;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tablasToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(793, 24);
+            this.menuStrip1.TabIndex = 70;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // tablasToolStripMenuItem
+            // 
+            this.tablasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saludToolStripMenuItem,
+            this.previsionToolStripMenuItem});
+            this.tablasToolStripMenuItem.Name = "tablasToolStripMenuItem";
+            this.tablasToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.tablasToolStripMenuItem.Text = "Tablas";
+            // 
+            // saludToolStripMenuItem
+            // 
+            this.saludToolStripMenuItem.Name = "saludToolStripMenuItem";
+            this.saludToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saludToolStripMenuItem.Text = "Salud";
+            // 
+            // previsionToolStripMenuItem
+            // 
+            this.previsionToolStripMenuItem.Name = "previsionToolStripMenuItem";
+            this.previsionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.previsionToolStripMenuItem.Text = "Prevision";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -757,8 +793,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtrut);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Liquidacion de Sueldo ";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -832,6 +872,10 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label lbfecha;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem tablasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saludToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem previsionToolStripMenuItem;
     }
 }
 
